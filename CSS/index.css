@@ -27,7 +27,7 @@ header {
 }
 
 .header-container > img {
-  width: 300px;
+  width: 280px;
 }
 
 nav {
@@ -70,8 +70,7 @@ nav {
   width: 140px;
   height: 80px;
   border-bottom: 1px solid #ebebeb;
-  background-color: #000;
-  opacity: 0.5;
+  background-color: #fff;
 }
 
 #sub-menu > li > a {
@@ -101,6 +100,7 @@ nav {
   font-weight: 300;
   position: relative;
   left: 90px;
+  color: #000;
 }
 
 .main-left > span {
@@ -108,6 +108,8 @@ nav {
   align-items: center;
   font-size: large;
   margin-left: 100px;
+  color: #000;
+  cursor: none;
 }
 
 .main-left > span:nth-child(3) {
@@ -122,5 +124,66 @@ nav {
 
 section {
   width: 100%;
+  height: 1000px;
+}
+.wpb_wrapper {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wpb_wrapper > h1 {
+  font-size: 100px;
+  font-weight: 300;
+}
+
+.wpb_wrapper ::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: relative;
+  border-left: 2px solid currentColor;
+  height: 4em;
+  max-height: 9rem;
+  margin-top: 1rem;
+  transform: translateX(50%);
+  border-color: rgba(184, 157, 79, 1);
+}
+.timetable_wrapper {
+  padding-top: 50px;
+  width: 1990px;
   height: 500px;
+  margin: 0 auto;
+}
+.timetable_content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+}
+.Table_item {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+
+.Table_item > img {
+  width: 450px;
+  height: 300px;
+  box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0, 0, 0, 0.32);
+}
+
+.Table_item > h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.Table_item > span {
+  text-align: center;
+  font-size: 23px;
+  color: rgba(184, 157, 79, 1);
 }
