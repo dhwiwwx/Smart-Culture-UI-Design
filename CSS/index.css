@@ -7,6 +7,7 @@
 ul,
 li {
   list-style: none;
+  color: #000;
 }
 a {
   text-decoration: none;
@@ -50,13 +51,18 @@ header {
   text-align: center;
 }
 
-#main-menu > li:hover a {
+#main-menu > li:hover .title {
   color: #fff;
+  opacity: 0.4;
+  background-color: #000;
 }
 
 #main-menu > li:hover #sub-menu {
-  opacity: 1;
+  opacity: 0.7;
   visibility: visible;
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s;
 }
 
 #sub-menu {
@@ -102,6 +108,7 @@ header {
   position: relative;
   left: 90px;
   color: #000;
+  z-index: 1;
 }
 
 .main-left > span {
@@ -118,13 +125,22 @@ header {
 }
 
 .slide_wrap {
-  display: flex;
-}
-
-.slide_wrap > img {
-  width: 1100px;
+  width: 1058px;
   height: 750px;
   box-shadow: 20px 20px 5px rgb(81, 79, 79);
+}
+.background {
+  display: flex;
+  width: 1058px;
+  height: 750px;
+  overflow: hidden;
+}
+.background li {
+}
+.background li > img {
+  width: 1058px;
+  height: 750px;
+  transition: 0.1s;
 }
 
 section {
@@ -156,7 +172,7 @@ section {
   border-color: rgba(184, 157, 79, 1);
 }
 .timetable_wrapper {
-  padding-top: 50px;
+  padding-top: 70px;
   width: 1990px;
   height: 500px;
   margin: 0 auto;
@@ -280,7 +296,7 @@ section {
 }
 footer {
   width: 100%;
-  height: 200px;
+  height: 240px;
 }
 .topfooter {
   display: flex;
@@ -288,23 +304,43 @@ footer {
   justify-content: space-between;
   margin: 0 auto;
   width: 1200px;
-  height: 100px;
+  height: 120px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.32);
 }
 .topfooter > ul {
   width: 70%;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .topfooter > ul > li > a {
   color: #000;
-  font-size: 13px;
+  font-size: 19px;
 }
 
 .ct_scrool {
+  color: #b89e4f;
+  font-size: 19px;
 }
-.ti_angle_up::before {
-  content: "\e648";
+.bottomfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  height: 120px;
+}
+
+.text-3 {
+  width: 140px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.text-3 > a > img {
+  width: 38px;
+}
+.text-3 > a:nth-child(2) > img {
+  width: 46px;
 }
